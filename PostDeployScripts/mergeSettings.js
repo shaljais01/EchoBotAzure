@@ -6,6 +6,8 @@ const envPath = path.resolve('./.env');
 const settings = readSettingsFile(appSettingPath, envPath);
 const env = process.env;
 
+This should error adding for testing
+
 const envNames = Object.keys(env)
     .filter(function(x){ return x.indexOf("APPSETTING_") === 0;})
     .filter(function(x){ return x.indexOf("APPSETTING_WEBSITE_") < 0; });
