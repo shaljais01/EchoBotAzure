@@ -12,3 +12,5 @@ module.exports = {
         "template-curly-spacing": [2, "always"]
     }
 };
+
+this should error out
