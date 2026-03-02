@@ -1,8 +1,10 @@
 name: Gemini PR Review
 
 on:
+  push:
+    branches: [ master, main ]
   pull_request:
-    types: [opened, synchronize, reopened] # Triggers on new PR or new push to PR
+    types: [opened, synchronize, reopened]    
 
 jobs:
   gemini-review:
